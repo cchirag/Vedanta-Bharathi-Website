@@ -54,7 +54,7 @@ function App() {
           if (isAuthenticated) {
             return <AddShlokaPage></AddShlokaPage>;
           } else {
-            return <AuthenticationPage></AuthenticationPage>
+            return <Redirect to="/authentication"></Redirect>
           }
         }}
       ></Route>
@@ -64,7 +64,7 @@ function App() {
           if (isAuthenticated) {
             return <AddEventPage></AddEventPage>;
           } else {
-            return <AuthenticationPage></AuthenticationPage>
+            return <Redirect to="/authentication"></Redirect>
           }
         }}
       ></Route>
@@ -74,7 +74,7 @@ function App() {
           if (isAuthenticated) {
             return <AddLinkPage></AddLinkPage>;
           } else {
-            return <AuthenticationPage></AuthenticationPage>
+            return <Redirect to="/authentication"></Redirect>
           }
         }}
       ></Route>
@@ -84,7 +84,7 @@ function App() {
           if (isAuthenticated) {
             return <AddThoughtOfTheDayPage></AddThoughtOfTheDayPage>;
           } else {
-            return <AuthenticationPage></AuthenticationPage>
+            return <Redirect to="/authentication"></Redirect>
           }
         }}
       ></Route>
