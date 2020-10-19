@@ -16,40 +16,10 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
-const firestore = firebase.firestore();
+export const firestore = firebase.firestore();
 
 export const logIn = (email, password) => {
   auth.signInWithEmailAndPassword(email, password).catch((error) => {
     console.log(error.message);
   });
-};
-
-export const addShloka = (
-  kannadaCategory,
-  sanskritCategory,
-  kannadaTitle,
-  sanskritTitle,
-  kannadaData,
-  sanskritData,
-  order
-) => {
-  firestore
-    .collection("shloka")
-    .add({
-      kannadaCategory: kannadaCategory,
-      sanskritCategory: sanskritCategory,
-      kannadaTitle: kannadaTitle,
-      sanskritTitle: sanskritTitle,
-      kannadaData: kannadaData,
-      sanskritData: sanskritData,
-      order: order,
-    })
-    .then((data) => {
-      data.set({
-        id: data.id,
-      });
-    })
-    .catch((error) => {
-      console.log(error.message);
-    });
 };

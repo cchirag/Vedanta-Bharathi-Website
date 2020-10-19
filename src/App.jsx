@@ -7,6 +7,7 @@ import AddShlokaPage from "./Pages/AddShlokaPage";
 import AddEventPage from "./Pages/AddEventPage";
 import AddLinkPage from "./Pages/AddLinkPage";
 import AddThoughtOfTheDayPage from "./Pages/AddThoughtOfTheDayPage";
+import "react-activity/dist/react-activity.css";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

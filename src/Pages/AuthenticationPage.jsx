@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { logIn } from "../Services/firebase.service";
 import { Bounce } from "react-activity";
-import "react-activity/dist/react-activity.css";
+
 
 export default function AuthenticationPage() {
   const [email, setEmail] = useState("");
