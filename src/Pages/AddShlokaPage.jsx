@@ -24,8 +24,8 @@ export default function AddShlokaPage() {
       .collection("shloka")
       .add({
         id: "",
-        order: order,
-        kannadaCategory: kannadaCategory,
+        order: Number(order),
+        kannadaCategory: kannadaCategory  ,
         sanskritCategory: sanskritCategory,
         kannadaTitle: kannadaTitle,
         sanskritTitle: sanskritTitle,
